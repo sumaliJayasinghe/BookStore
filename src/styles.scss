@@ -1,0 +1,107 @@
+/* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.bs-background-image{
+    background-image: url(./assets/images/bg-book-store.jpg);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bs-text-align-center{
+    text-align: center;
+}
+.bs-text-align-justify{
+    text-align: justify;
+}
+.bs-btn-wrapper{
+    // @extend .bs-text-align-center;
+}
+.bs-btn-landing{
+    padding: .5em .6em;
+    // position: absolute;
+    // top: 50%;
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: baseline;
+    text-align: center;
+    margin: 0;
+    min-width: 64px;
+    line-height: 36px;
+    padding: 0 16px;
+    border-radius: 4px;
+    overflow: visible;
+    transform: translate3d(0,0,0);
+    transition: background .4s cubic-bezier(.25,.8,.25,1),box-shadow 280ms cubic-bezier(.4,0,.2,1);
+    -webkit-box-shadow: 10px 10px 300px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 10px 10px 300px 0px rgba(255,255,255,1);
+    box-shadow: 10px 10px 300px 0px rgba(255,255,255,1);}
+
+    .bs-nav-container{
+        height: 100%;
+    }
+.bs-container{
+    padding: 1.5em
+}
+.bs-table{
+    width:100% !important;
+}
+.mat-fab {
+    box-sizing: border-box;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: baseline;
+    text-align: center;
+    margin: 0;
+    min-width: 64px;
+    line-height: 36px;
+    padding: 0 16px;
+    border-radius: 4px;
+    overflow: visible;
+    transform: translate3d(0,0,0);
+    transition: background .4s cubic-bezier(.25,.8,.25,1),box-shadow 280ms cubic-bezier(.4,0,.2,1);
+    min-width: 0;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    flex-shrink: 0;
+    }
+    .mat-fab .mat-button-wrapper {
+        padding: 16px 0;
+        display: inline-block;
+        line-height: 24px;
+    }
+
+    .bs-btn-wrapper{
+        float: right;
+        margin-top: 1.5em;
+        margin-right: 1.5em;
+    }
+    .bs-image{
+        float: left;
+        margin-right: 1em;
+    }
+    .bs-top-0{
+        padding-top: 0;
+    }
+    .bs-para-bottom{
+        padding: 1em
+    }
+    .bs-text-bold{
+        font-weight: 600;
+    }
