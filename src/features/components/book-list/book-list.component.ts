@@ -34,6 +34,7 @@ export class BookListComponent implements OnInit, OnDestroy {
    */
   getAllBooks = () => {
     this.dataSubscription = this.bookDataService.getBooks().subscribe(res => {
+      console.log(res)
       this.dataSource = new MatTableDataSource(res);
       this.dataSource.filterPredicate = this.setFilter;
       this.dataSource.sort = this.sort;
