@@ -12,6 +12,7 @@ export class BookListComponent implements OnInit, OnDestroy {
 
   public displayedColumns = ['name', 'type', 'createdDate', 'updatedDate'];
   public dataSource = new MatTableDataSource([]);
+  public bookList = []
 
   private dataSubscription: Subscription;
 
@@ -34,7 +35,7 @@ export class BookListComponent implements OnInit, OnDestroy {
    */
   getAllBooks = () => {
     this.dataSubscription = this.bookDataService.getBooks().subscribe(res => {
-      console.log(res)
+      this.bookList = res;
       this.dataSource = new MatTableDataSource(res);
       this.dataSource.filterPredicate = this.setFilter;
       this.dataSource.sort = this.sort;
